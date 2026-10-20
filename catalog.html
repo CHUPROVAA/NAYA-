@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Каталог косметики и уходовых формул NAYA.">
+    <title>Каталог — NAYA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+    <div class="announcement">Коллекция уходовых формул — NAYA</div>
+
+    <header class="header">
+      <div class="header-inner">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Меню</button>
+        <nav class="site-nav" id="site-nav" aria-label="Главная навигация">
+          <a href="index.html">Главная</a>
+          <a aria-current="page" href="catalog.html">Каталог</a>
+          <a href="about.html">О бренде</a>
+        </nav>
+        <a class="logo" href="index.html" aria-label="NAYA — главная">NAYA<span>BEAUTY · RITUALS</span></a>
+        <a class="header-link" href="index.html#contacts">Контакты <span aria-hidden="true">→</span></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-intro">
+        <div class="container">
+          <p class="eyebrow">Уход, подобранный с вниманием</p>
+          <h1>Коллекция NAYA</h1>
+          <p>Уходовые формулы для лица и тела — для вашего ежедневного ритуала.</p>
+        </div>
+      </section>
+
+      <section class="container catalog-section" aria-label="Каталог товаров">
+        <div class="filters" role="group" aria-label="Фильтр по назначению">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Все</button>
+          <button class="filter-button" type="button" data-filter="face" aria-pressed="false">Для лица</button>
+          <button class="filter-button" type="button" data-filter="body" aria-pressed="false">Для тела</button>
+          <button class="filter-button" type="button" data-filter="oil" aria-pressed="false">Масла</button>
+        </div>
+        <p class="filter-status" aria-live="polite">Показаны все товары</p>
+
+        <div class="product-grid catalog-grid">
+          <article class="product-card" data-category="face">
+            <img class="product-image" src="images/naya-oil.png" alt="Сыворотка NAYA в стеклянном флаконе">
+            <div class="product-line"><h2>Сыворотка NAYA</h2><p>8 400 ₽</p></div>
+            <p class="product-detail">Для лица · 30 мл</p>
+          </article>
+          <article class="product-card" data-category="face">
+            <img class="product-image" src="images/naya-cream.png" alt="Крем NAYA в светлой баночке">
+            <div class="product-line"><h2>Крем NAYA</h2><p>6 900 ₽</p></div>
+            <p class="product-detail">Для лица · 50 мл</p>
+          </article>
+          <article class="product-card" data-category="body">
+            <img class="product-image" src="images/naya-cream.png" alt="Молочко для тела NAYA">
+            <div class="product-line"><h2>Молочко для тела</h2><p>5 200 ₽</p></div>
+            <p class="product-detail">Для тела · 200 мл</p>
+          </article>
+          <article class="product-card" data-category="body oil">
+            <img class="product-image" src="images/naya-oil.png" alt="Масло для тела NAYA в янтарном флаконе">
+            <div class="product-line"><h2>Масло для тела</h2><p>4 800 ₽</p></div>
+            <p class="product-detail">Для тела · 100 мл</p>
+          </article>
+          <article class="product-card" data-category="face">
+            <div class="product-image product-placeholder placeholder-rose" role="img" aria-label="Иллюстрация бальзама для губ"></div>
+            <div class="product-line"><h2>Бальзам для губ</h2><p>1 900 ₽</p></div>
+            <p class="product-detail">Для лица · 10 мл</p>
+          </article>
+          <article class="product-card" data-category="face">
+            <img class="product-image" src="images/naya-oil.png" alt="Эссенция NAYA">
+            <div class="product-line"><h2>Эссенция NAYA</h2><p>7 300 ₽</p></div>
+            <p class="product-detail">Для лица · 100 мл</p>
+          </article>
+          <article class="product-card" data-category="body">
+            <img class="product-image" src="images/naya-cream.png" alt="Крем для рук NAYA">
+            <div class="product-line"><h2>Крем для рук NAYA</h2><p>2 400 ₽</p></div>
+            <p class="product-detail">Для тела · 75 мл</p>
+          </article>
+          <article class="product-card" data-category="body">
+            <div class="product-image product-placeholder placeholder-sand" role="img" aria-label="Иллюстрация скраба для тела"></div>
+            <div class="product-line"><h2>Мягкий скраб NAYA</h2><p>3 600 ₽</p></div>
+            <p class="product-detail">Для тела · 150 мл</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a class="footer-logo" href="index.html">NAYA</a>
+        <p>Искусство бережного ухода. Ритуалы красоты — в спокойном ритме.</p>
+        <nav aria-label="Навигация в подвале">
+          <a href="index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="about.html">О бренде</a>
+        </nav>
+        <small>© <span data-year></span> NAYA</small>
+      </div>
+    </footer>
+  </body>
+</html>
